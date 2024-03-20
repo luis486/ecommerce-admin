@@ -19,5 +19,6 @@ NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
 # See the documentation for all the connection string options: https://pris.ly/d/connection-strings
 
 DATABASE_URL=''
-
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=""
+FRONTEND_STORE_URL=http://localhost:3001
 ```
