@@ -17,8 +17,25 @@ NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
 
 # Prisma supports the native connection string format for PostgreSQL, MySQL, SQLite, SQL Server, MongoDB and CockroachDB.
 # See the documentation for all the connection string options: https://pris.ly/d/connection-strings
+# See the documentation for MySql: https://www.prisma.io/docs/orm/overview/databases/mysql
+# See the documentation for SqlServer https://www.prisma.io/docs/orm/overview/databases/sql-server/sql-server-local
 
 DATABASE_URL=''
 NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=""
 FRONTEND_STORE_URL=http://localhost:3001
 ```
+
+
+### Connect to PlanetScale and Push Prisma 
+```shell
+npx prisma generate or npx prisma generate ./prisma/schema.prisma 
+npx prisma db push
+```
+
+
+### Start the app
+
+```shell
+npm run dev
+```
+
