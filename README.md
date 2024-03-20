@@ -26,7 +26,7 @@ FRONTEND_STORE_URL=http://localhost:3001
 ```
 
 
-### Connect to PlanetScale and Push Prisma 
+### Connect to DB and Push Prisma 
 ```shell
 npx prisma generate or npx prisma generate ./prisma/schema.prisma 
 npx prisma db push
