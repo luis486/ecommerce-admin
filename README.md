@@ -33,6 +33,22 @@ npx prisma db push
 ```
 ### Connect to Cloudinary
 [Cloudinary](https://cloudinary.com/)
+Create a free account
+in the .env assign the corresponding cloud name
+```shell
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=""
+```
+then go to settings --> Upload --> Upload presets --> Add upload presets --> Signing mode change to Unsigned --> Save
+
+Copy the upload preset name and paste it into:
+```js
+const ImageUpload: React.FC<ImageUploadProps> = ({
+...
+<CldUploadWidget onUpload={onUpload} uploadPreset="{your_upload_preset_Unsigned}">
+...
+}
+
+```
 
 ### Start the app
 
