@@ -31,7 +31,8 @@ FRONTEND_STORE_URL=http://localhost:3001
 npx prisma generate or npx prisma generate ./prisma/schema.prisma 
 npx prisma db push
 ```
-
+### Connect to Cloudinary
+[Cloudinary](https://cloudinary.com/)
 
 ### Start the app
 
